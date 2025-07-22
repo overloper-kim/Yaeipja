@@ -42,6 +42,21 @@ dependencies {
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.2'
 	runtimeOnly 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
 
+	// WebSocket 라이브러리
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-websocket
+	implementation("org.springframework.boot:spring-boot-starter-websocket:3.5.3")
+	
+	// 메시지 관련 라이브러리
+	// https://mvnrepository.com/artifact/org.springframework/spring-messaging
+	implementation("org.springframework:spring-messaging:7.0.0-M6")
+	
+	// json 데이터 처리 라이브러리
+	// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+	implementation("com.fasterxml.jackson.core:jackson-core:2.19.1")
+	
+	// json 데이터 바인딩 라이브러리	
+	// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+	implementation("com.fasterxml.jackson.core:jackson-databind:2.19.1")
 }
 
 tasks.named('test') {
