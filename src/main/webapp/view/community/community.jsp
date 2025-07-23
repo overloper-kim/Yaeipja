@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>야입자 - 커뮤니티</title>
+<link rel="stylesheet" href="${pageCotext.request.contextPath}/css/reset.css">
 </head>
 <body>
-	<h1>이것은 커뮤니티이다.</h1>
+	<%@ include file="../header.jsp" %>
 </body>
 </html>
