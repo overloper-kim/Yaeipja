@@ -1,0 +1,12 @@
+.comm-layout {
+	margin: 1rem 0rem;
+	padding: 1rem;
+	border: 0.5px solid #404040;
+	border-radius: 5px;
+}
+
+.comm-layout > h1 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Pretendard-Regular;
+}
