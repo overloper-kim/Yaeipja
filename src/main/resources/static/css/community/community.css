@@ -1,12 +1,14 @@
 .comm-layout {
 	margin: 1rem 0rem;
 	padding: 1rem;
-	border: 0.5px solid #404040;
-	border-radius: 5px;
 }
 
-.comm-layout > h1 {
-	font-size: 18px;
-	font-weight: bold;
+.comm-title {
+	font-size: 24px;
 	font-family: Pretendard-Regular;
+	text-align: center;
+}
+
+.comm-layout > hr {
+	margin: 15px 0px;
 }

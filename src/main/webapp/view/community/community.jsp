@@ -12,9 +12,13 @@
 <body>
 	<%@ include file="../header.jsp" %>
 	<main>
-		<section class="comm-layout">
-			<h1>커뮤니티</h1>
-		</section>
+		<div class="comm-layout">
+			<section class="comm-title">
+				<h1>커뮤니티</h1>
+			</section>
+			<hr>
+
+		</div>
 	</main>
 </body>
 </html>
