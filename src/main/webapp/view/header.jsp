@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>야입자</title>
-    <link rel="stylesheet" href="${pageCotext.request.contextPath}/css/header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/header.css">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
         </section>
         <section class="bottom-item">
             <div class="header-logo">
-                <img src="img/yaeipja.png" />
+                <img src="${pageContext.request.contextPath}/img/yaeipja.png" />
             </div>
             <div>
                 <nav>

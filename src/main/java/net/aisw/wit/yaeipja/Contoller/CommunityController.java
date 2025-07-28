@@ -10,4 +10,9 @@ public class CommunityController {
 	public String GetIdx() {
 		return "community/community";
 	}
+	
+	@RequestMapping("/comm/write")
+	public String GetWriteCommunity() {
+		return "community/comm_write";
+	}
 }

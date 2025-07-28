@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: yaeipja
+  mvc:
+    view:
+      prefix: /view/
+      suffix: .jsp
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springweb?characterEncoding=utf-8
+    username: spring
+    password: project

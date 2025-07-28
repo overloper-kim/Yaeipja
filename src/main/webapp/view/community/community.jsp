@@ -17,7 +17,9 @@
 				<h1>커뮤니티</h1>
 			</section>
 			<hr>
-
+			<section>
+				
+			</section>
 		</div>
 	</main>
 </body>
