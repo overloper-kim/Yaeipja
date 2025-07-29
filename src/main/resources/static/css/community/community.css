@@ -17,9 +17,41 @@
 
 /* 커뮤니티 글 작성 */
 .comm-write-head {
-	
+	padding: 1rem 0rem;
 }
 
 .comm-write-form {
-	
+
+}
+
+.comm-write-navigator {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem 1rem;
+	background-color: #404040;
+	margin: 0.5rem 0rem;
+	color: #FFFFFF;
+}
+
+.comm-write-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 25px;
+}
+
+.comm-write-title > h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	display: block;
+}
+
+.comm-write-title > input {
+	margin-left: 1rem;
+	font-size: 1.5rem;
+	width: 100%;
+	flex:1;
+	border: none;
+	border-bottom: 1px solid #222222;
 }

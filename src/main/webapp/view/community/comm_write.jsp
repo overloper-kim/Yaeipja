@@ -15,7 +15,7 @@
 <script>
 $(document).ready(function() {
 	$('#summernote').summernote({
-		  height: 300,                 // 에디터 높이
+		  height: 750,                 // 에디터 높이
 		  minHeight: null,             // 최소 높이
 		  maxHeight: null,             // 최대 높이
 		  focus: true,                  // 에디터 로딩후 포커스를 맞출지 여부
@@ -30,12 +30,29 @@ $(document).ready(function() {
 	<main>
 		<div class="comm-layout">
 			<section class="comm-write-head">
-				
+				<div class="comm-write-navigator">
+					<p>
+						야입자 >
+					</p>
+					<p>
+						 ㅤ커뮤니티 >
+					</p>
+					<p>
+						ㅤ잡답게시판
+					</p>
+				</div>
+				<div class="comm-write-title">
+					<h3>제목: </h3>
+					<input type="text" placeholde="제목을 입력하세요">
+				</div>
 			</section>
 			<section class="comm-write-form">
 				<form>
 					<textarea id="summernote" name="editordata"></textarea>
 				</form>
+				<div>
+					<button>등록</button>
+				</div>
 			</section>
 		</div>
 	</main>
