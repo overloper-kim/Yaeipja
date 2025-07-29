@@ -50,8 +50,9 @@ $(document).ready(function() {
 				<form>
 					<textarea id="summernote" name="editordata"></textarea>
 				</form>
-				<div>
-					<button>등록</button>
+				<div class="submit-btn">
+					<button class="del-btn">글 전체 삭제</button>
+					<button class="save-btn">등록</button>
 				</div>
 			</section>
 		</div>
