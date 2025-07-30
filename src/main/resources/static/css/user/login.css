@@ -1,0 +1,15 @@
+.login-layout {
+	margin: 1rem 0rem;
+	padding: 1rem;
+}
+
+.login-title {
+	font-size: 24px;
+	font-family: Pretendard-Regular;
+	text-align: center;
+	color: #404040;
+}
+
+.login-layout > hr {
+	margin: 15px 0px;
+}
