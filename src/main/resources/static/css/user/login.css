@@ -13,3 +13,19 @@
 .login-layout > hr {
 	margin: 15px 0px;
 }
+
+.wrap-login-form {
+	margin: 2rem;
+	width: 100%;
+}
+
+.login-form {
+	margin: 0 auto;
+	padding: 3rem;
+	border: 1px solid #D9D9D9;
+}
+
+.login-input-layout {
+	display: flex;
+	flex-direction: col;
+}
