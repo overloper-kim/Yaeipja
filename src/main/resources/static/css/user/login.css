@@ -1,7 +1,7 @@
+/* login.jsp & signup.jsp 공통 사용*/
 .login-layout {
 	margin: 1rem 0rem;
 	padding: 1rem;
-
 }
 
 .login-title {
@@ -70,4 +70,9 @@
 
 .login-info > a {
 	margin-left: 15px;
+}
+
+.check-sex {
+	padding-bottom: 1rem;
+	font-size: 1.1rem;
 }
