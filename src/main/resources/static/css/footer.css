@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+footer {
+	display: flex;
+	background-color: #222222;
+	position: relative;
+	bottom: 0;
+	padding: 5rem 6rem;
+	color: #FFFFFF;
+	justify-content: space-between;
+}
+
+.wrap-footer-sec {
+	display: flex;
+	flex-direction: row;
+	flex: 2;
+}
+
+.footer-sec {
+	margin: 0rem 3rem;
+}
+
+.footer-sec-main > p {
+	font-size: 1.1rem;
+	padding-bottom: 1rem;
+}
+
+.footer-highlight {
+	width: 100%;
+	height: 1px;
+	background-color: #FF6A00;
+}
+
+.footer-sec-sub {
+	padding-top: 1rem;
+}
+
+.footer-sec-sub > ul > li{
+	padding: 0.5rem;
+}
+
+.footer-team-info {
+}
+
+.footer-logo > img {
+	width: 70%;
+}

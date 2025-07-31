@@ -34,15 +34,16 @@
 							placeholder="비밀번호를 입력하세요." />
 					</div>
 					<div class="submit-btn-info">
-						<button>로그인</button>
+						<button class="login-btn">로그인</button>
 						<div class="login-info">
-							<p>비밀번호 찾기</p>
-							<p>회원가입</p>
+							<a>비밀번호 찾기</a>
+							<a>회원가입</a>
 						</div>
 					</div>
 				</form>
 			</section>
 		</div>
 	</main>
+	<%@ include file="../footer.jsp" %>
 </body>
 </html>
