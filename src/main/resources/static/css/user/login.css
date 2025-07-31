@@ -16,16 +16,35 @@
 
 .wrap-login-form {
 	margin: 2rem;
-	width: 100%;
 }
 
 .login-form {
 	margin: 0 auto;
 	padding: 3rem;
 	border: 1px solid #D9D9D9;
+	width: fit-content;
+	border-radius: 5px;
 }
 
 .login-input-layout {
 	display: flex;
-	flex-direction: col;
+	flex-direction: column;
+	padding-bottom: 1.5rem;
+}
+
+.login-input-layout > label {
+	font-size: 1.1rem;
+	padding-bottom: 10px;
+}
+
+.login-input-layout > input {
+	border: 1px solid #D9D9D9;
+	padding: 1rem 0.5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+.submit-btn-info {
+	display: flex;
+	flex-direction: column;
 }
