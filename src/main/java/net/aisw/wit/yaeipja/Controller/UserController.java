@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import net.aisw.wit.yaeipja.Service.UserService;
 import net.aisw.wit.yaeipja.dto.UserDTO;
 
@@ -17,8 +19,43 @@ public class UserController {
 	private UserService userService;
 
 	@GetMapping("/login")
-	public String getLoginPage() {
-		return "user/login";
+	public String getLoginPage(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		if(session.getAttribute("logged") == null) {
+			return "user/login";
+		} else {
+			System.out.println("이미 로그인함");
+
+			return "index";
+		}
+	}
+
+	@PostMapping("/login")
+	@ResponseBody
+	public String login(@RequestParam("id") String id, @RequestParam("pw") String pw, HttpServletRequest request) {
+		try {
+			UserDTO user= new UserDTO();
+			user.setId(id);
+			user.setPw(pw);
+			System.out.println(user.toString());
+
+			int result = userService.login(user);
+			System.out.println(result);
+
+			if(result > 0) {
+				HttpSession session = request.getSession();
+				session.setAttribute("logged", user);
+				session.setMaxInactiveInterval(30 * 60);
+
+				return "success";
+			} else {
+				return "none";
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "exeption";
+		}
 	}
 
 	@GetMapping("/signup")
@@ -44,16 +81,11 @@ public class UserController {
 	// AJAX로 회원가입 처리
 	@PostMapping("/signup")
 	@ResponseBody
-	public String signup(
-			@RequestParam("id") String id,
-			@RequestParam("pw") String pw,
-			@RequestParam("nickname") String nickname,
-			@RequestParam("phone") String phone,
-			@RequestParam(value = "address", required = false) String address,
-			@RequestParam("sex") String sex,
+	public String signup(@RequestParam("id") String id, @RequestParam("pw") String pw,
+			@RequestParam("nickname") String nickname, @RequestParam("phone") String phone,
+			@RequestParam(value = "address", required = false) String address, @RequestParam("sex") String sex,
 			@RequestParam(value = "height", required = false) String height,
-			@RequestParam(value = "weight", required = false) String weight
-	) {
+			@RequestParam(value = "weight", required = false) String weight) {
 		try {
 			UserDTO user = new UserDTO();
 			user.setId(id);
@@ -85,5 +117,14 @@ public class UserController {
 			e.printStackTrace();
 			return "exception";
 		}
+	}
+
+	@GetMapping("/logout")
+	public String logout(HttpServletRequest request) {
+		HttpSession session = request.getSession(false);
+		if(session != null) {
+			session.invalidate();
+		}
+		return "redirect:/login";
 	}
 }

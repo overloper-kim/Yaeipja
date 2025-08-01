@@ -18,6 +18,7 @@
 				<ul class="top-menu-item">
 					<li><a href="/signup">회원가입</a></li>
 					<li><a href="/login">로그인</a></li>
+					<li><a href="/logout">로그아웃</a></li>
 					<li><a href="/myprofile">마이페이지</a></li>
 				</ul>
 			</nav>
@@ -29,11 +30,11 @@
 			<div>
 				<nav>
 					<ul class="bottom-menu-item">
-						<li><a>옷</a></li>
-						<li><a>신발</a></li>
-						<li><a>공지사항</a></li>
-						<li><a>커뮤니티</a></li>
-						<li><a>연결</a></li>
+						<li><a href="/">옷</a></li>
+						<li><a href="/">신발</a></li>
+						<li><a href="/">공지사항</a></li>
+						<li><a href="/community">커뮤니티</a></li>
+						<li><a href="/conn">연결</a></li>
 					</ul>
 				</nav>
 			</div>

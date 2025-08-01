@@ -166,7 +166,7 @@
 			const pw = document.getElementById('pw').value;
 			const repw = document.getElementById('repw').value;
 			const nickname = document.getElementById('nickname').value;
-			const phone = document.geleElementById('phone').value;
+			const phone = document.getElementById('phone').value;
 			const address = document.getElementById('address').value;
 			const height = document.getElementById('height').value;
 			const weight = document.getElementById('weight').value;
@@ -210,10 +210,16 @@
 				},
 				success: function (response) {
 					if (response === "success") {
-						window.location.href("/login");
+						alert("회원가입이 완료되었습니다!");
+						window.location.href = "/login";
+					} else if (response === "duplicate") {
+						alert("이미 존재하는 아이디입니다.");
 					} else {
-						alert("회원가입 실패");
+						alert("회원가입에 실패했습니다. 다시 시도해주세요.");
 					}
+				},
+				error: function() {
+					alert("회원가입 중 오류가 발생했습니다.");
 				}
 			})
 			return true;

@@ -9,6 +9,10 @@
 		<link rel="stylesheet" href="${pageCotext.request.contextPath}/css/style.css">
 	</head>
 	<body>
-		<p>jsp 연동 완료~!</p>
+	 	<%@ include file="header.jsp" %>
+			<div class="main-banner-img">
+				<img src="${pageContext.request.contextPath}/img/Group 9.png"/>
+			</div>
+		<%@ include file="footer.jsp" %>
 	</body>
 </html>

@@ -22,3 +22,12 @@ main {
 	justify-content: center;
 
 }
+
+.main-banner-img {
+	background-image: url("../img/main.png");
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
