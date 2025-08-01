@@ -1,4 +1,4 @@
-package net.aisw.wit.yaeipja.Contoller;
+package net.aisw.wit.yaeipja.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ public class CommunityController {
 	public String GetIdx() {
 		return "community/community";
 	}
-	
+
 	@RequestMapping("/comm/write")
 	public String GetWriteCommunity() {
 		return "community/comm_write";

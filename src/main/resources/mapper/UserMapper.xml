@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="net.aisw.wit.yaeipja.repo.userMapper">
-	<select id="getID" parameterType="net.aisw.wit.yaeipja.dto.userDTO" resultType="int">
+<mapper namespace="net.aisw.wit.yaeipja.repo.UserMapper">
+	<select id="getID" parameterType="net.aisw.wit.yaeipja.dto.UserDTO" resultType="int">
 		SELECT
 			COUNT(*) as count
 		FROM user
@@ -11,9 +11,9 @@
 	</select>
 	
 	<!-- 회원가입을 위한 insert 쿼리 -->
-	<insert id="insertUser" parameterType="net.aisw.wit.yaeipja.dto.userDTO">
+	<insert id="insertUser" parameterType="net.aisw.wit.yaeipja.dto.UserDTO">
 		INSERT INTO user (
-			id, pw, nickname, birth_date, phone, address, sex, height, weight
+			id, password, nickname, birth_date, phone, address, gender, height, weight
 		) VALUES (
 			#{id}, #{pw}, #{nickname}, #{birth_date}, #{phone}, #{address}, #{sex}, #{height}, #{weight}
 		)

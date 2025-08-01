@@ -11,7 +11,7 @@
 	color: #404040;
 }
 
-.login-layout > hr {
+.login-layout>hr {
 	margin: 15px 0px;
 }
 
@@ -33,12 +33,12 @@
 	padding-bottom: 1.5rem;
 }
 
-.login-input-layout > label {
+.login-input-layout>label {
 	font-size: 1.1rem;
 	padding-bottom: 10px;
 }
 
-.login-input-layout > input {
+.login-input-layout>input {
 	border: 1px solid #D9D9D9;
 	padding: 0.8rem 0.5rem;
 	font-size: 1rem;
@@ -68,7 +68,7 @@
 	justify-content: flex-end;
 }
 
-.login-info > a {
+.login-info>a {
 	margin-left: 15px;
 	color: #222222;
 }
@@ -76,4 +76,33 @@
 .check-sex {
 	padding-bottom: 1rem;
 	font-size: 1.1rem;
+}
+
+.id-check-result {
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.id-check-result.available {
+	color: green;
+}
+
+.id-check-result.duplicate {
+	color: red;
+}
+
+.error-message {
+	color: red;
+	margin-top: 10px;
+}
+
+.success-message {
+	color: green;
+	margin-top: 10px;
+}
+
+.vali-id {
+	margin-top: 0.5rem;
+	border: none;
+	padding: 0.8rem;
 }

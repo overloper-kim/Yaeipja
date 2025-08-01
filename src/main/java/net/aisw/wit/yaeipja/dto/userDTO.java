@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 
 @Data
 @RequiredArgsConstructor
-public class userDTO {
+public class UserDTO {
 	private String id;
 	private String pw;
 	private String nickname;

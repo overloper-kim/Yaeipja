@@ -2,11 +2,11 @@ package net.aisw.wit.yaeipja.repo;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import net.aisw.wit.yaeipja.dto.userDTO;
+import net.aisw.wit.yaeipja.dto.UserDTO;
 
 @Mapper
-public interface userMapper {
-	int getID(userDTO userVO);
-	
-	int insertUser(userDTO user);
+public interface UserMapper {
+	int getID(UserDTO userVO);
+
+	int insertUser(UserDTO user);
 }
