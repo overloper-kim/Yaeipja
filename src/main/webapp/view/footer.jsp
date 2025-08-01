@@ -64,8 +64,7 @@
 				</div>
 			</div>
 			<div class="git-source">
-				<img src="${pageContext.request.contextPath}/img/github-sign.png">
-				<a href="https://github.com/overloper-kim/Yaeipja">소스코드 보러가기</a>
+				
 			</div>
 		</section>
 	</footer>

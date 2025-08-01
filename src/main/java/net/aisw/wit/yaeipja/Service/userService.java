@@ -15,4 +15,8 @@ public class userService {
 		return userMapper.getID(userVO);
 	}
 	
+	// 회원가입 처리
+	public int signup(userDTO user) {
+		return userMapper.insertUser(user);
+	}
 }

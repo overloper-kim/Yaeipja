@@ -7,4 +7,6 @@ import net.aisw.wit.yaeipja.dto.userDTO;
 @Mapper
 public interface userMapper {
 	int getID(userDTO userVO);
+	
+	int insertUser(userDTO user);
 }

@@ -37,7 +37,7 @@
 						<button class="login-btn">로그인</button>
 						<div class="login-info">
 							<a>비밀번호 찾기</a>
-							<a>회원가입</a>
+							<a href="/signup">회원가입</a>
 						</div>
 					</div>
 				</form>
